@@ -1,13 +1,10 @@
 pipeline{
 agent any
 tools{
-maven 'maven3.9.4'
-//test
+maven 'maven3.8.6'
 }
-
+//testing it for merge conflicts
 // test
-
-
 options{
 timestamps()
 buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5'))
